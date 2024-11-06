@@ -36,3 +36,167 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  background-color: #333;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+}
+
+
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ajusta el contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Barra de navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  background-color: #333;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Tarjeta de bienvenida */
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Cambia la navegación a una columna en pantallas más pequeñas */
+  nav ul {
+      flex-direction: column;
+      padding: 1rem;
+  }
+
+  /* Ajusta el tamaño de la tarjeta */
+  .card {
+      width: 90%;
+      margin: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Reduce el tamaño del encabezado y del pie de página */
+  header {
+      font-size: 1.5rem;
+      padding: 0.8rem;
+  }
+
+  footer {
+      font-size: 0.8rem;
+  }
+
+  /* Ajusta la tarjeta para pantallas muy pequeñas */
+  .card {
+      font-size: 0.9rem;
+      padding: 0.8rem;
+  }
+}
+
+/* Ajusta el contenedor principal para usar flex */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Permite que el contenido principal ocupe el espacio restante */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Footer centrado sin position fixed */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Empuja el footer hacia el final del contenedor principal */
+}
